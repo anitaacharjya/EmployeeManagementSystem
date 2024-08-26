@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+  <display-name>HRManagement_System</display-name>
+  <welcome-file-list>
+    <welcome-file>Index.jsp</welcome-file>
+  </welcome-file-list>
+  <listener>
+    <listener-class>com.pcs.employee.controller.ContextListener</listener-class>
+  </listener>
+  <servlet>
+    <description></description>
+    <display-name>DeleteServlet</display-name>
+    <servlet-name>DeleteServlet</servlet-name>
+    <servlet-class>com.pcs.employee.controller.DeleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteServlet</servlet-name>
+    <url-pattern>/DeleteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PayrollServlet</display-name>
+    <servlet-name>PayrollServlet</servlet-name>
+    <servlet-class>com.pcs.employee.controller.PayrollServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PayrollServlet</servlet-name>
+    <url-pattern>/PayrollServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PayslipDownloadServlet</display-name>
+    <servlet-name>PayslipDownloadServlet</servlet-name>
+    <servlet-class>com.pcs.employee.controller.PayslipDownloadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PayslipDownloadServlet</servlet-name>
+    <url-pattern>/PayslipDownloadServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
